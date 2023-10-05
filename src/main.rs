@@ -1,7 +1,11 @@
-mod lib_day1;
+mod days;
+mod lib;
+
+use crate::days::day1 as day1;
+use crate::lib::logging::log;
 
 fn main() {
-    println!("Hello, world!");
+    log("Hello World");
 
-    lib_day1::lib_day1::test();
+    day1::test();
 }
